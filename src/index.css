@@ -2,19 +2,29 @@
 .App {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-}
-
-/* LandingPage.css */
-.landing-page {
-  background-color: #ffd404;
-  height: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #ffd404, #ffb400, #ffa000, #ff8c00, #ff7800, #ff7800, #ff8c00, #ffa000, #ffb400, #ffd404);
+  background-size: 800% 800%;
+  animation: gradientAnimation 20s ease infinite;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* LandingPage.css */
 .landing-page img {
   max-width: 300px;
   max-height: 300px;
@@ -57,60 +67,5 @@
 }
 
 /* ContactUs.css */
-.contact-us {
-  margin-top: 2rem;
-}
+/* ... */
 
-.contact-us form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact-us input,
-.contact-us textarea {
-  width: 300px;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact-us button {
-  padding: 0.5rem 1rem;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.contact-us a {
-  display: block;
-  margin-top: 1rem;
-  color: #333;
-  text-decoration: none;
-}
-
-/* Animations */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
