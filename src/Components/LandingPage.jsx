@@ -1,16 +1,16 @@
 import React from 'react';
 import WhatWeDo from './WhatWeDo';
 import Contact from './Contact';
-import bearImage from '../assets/bearImage.png';
+import bearImage from '../assets/bearImage2.png';
 
 const LandingPage = () => {
   return (
-    <div style={{ backgroundColor: '#ffd404', height: '100vh' }}>
+    <div style={{ backgroundColor: '', height: '100vh' }}>
       <div>
         {/* Bear animation */}
         <img src={bearImage} alt="Bear" />
-        {/* Smoke animation */}
-        <img src="https://i.giphy.com/ftfVpeWsm95QgGfOZ8.webp" alt="Smoke" />
+        {/* Smoke animation
+        <img src="" alt="" /> */}
         {/* Text animation */}
         <h1>Good Gas</h1>
       </div>
@@ -21,4 +21,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default LandingPage; 
